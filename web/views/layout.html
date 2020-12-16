@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html class="h-100">
+
 <head>
-  {% include 'header.html' %}
+    {% include 'header.html' %}
 </head>
 
-<body>
-  {% include 'nav.html' %}
-
-  {% block content %}{% endblock %}
+<body class="h-100">
+    {% include 'nav.html' %} {% block content %}{% endblock %}
 </body>
+
+{% include 'scripts.html' %}
+
 </html>
